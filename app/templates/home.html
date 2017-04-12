@@ -1,0 +1,8 @@
+<h1>Bloc Chat</h1>
+<button class="btn btn-primary" type="button" ng-click="room.open()">Add New Room</button>
+<section class="chat-room-numbers">
+     <div class="chat-rooms" ng-repeat="room in room.roomData.all">
+          <a class="chat-name" ui-sref="room">{{ room.$value }}</a>
+     </div>
+</section>
+

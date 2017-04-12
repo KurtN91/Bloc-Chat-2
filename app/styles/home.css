@@ -1,0 +1,60 @@
+body {
+ background-color: rgb(65, 152, 244);
+ font-family: 'Roboto Condensed', sans-serif;
+ color: white;
+}
+ 
+.navbar a {
+    color: white;
+}
+
+.chat-room-numbers a {
+    position: relative;
+    text-align: Left;
+    display: table-cell;
+    width: 10%;
+    color: white;
+}
+
+.chat-room-numbers ul{
+    list-style-type: none;
+}
+
+
+.bodycol {
+    display: table-cell;
+    background-color: rgb(63, 191, 165);
+    width: 90vw;
+    padding-left: 25%;
+    height: 87vh;
+}
+
+.clear{
+    clear:both;
+}
+
+.master{
+    display:table;
+    width:100%;
+}
+
+header {
+    background-color: rgb(144,238,144);
+}
+
+.room-name {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.all-messages{
+    font-weight:bold;
+    font-size: 15px;
+    color: black; 
+    
+}
+
+.modal-title{
+    color:black;
+}
+

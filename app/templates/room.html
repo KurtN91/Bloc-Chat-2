@@ -1,0 +1,20 @@
+<h1>Bloc Chat</h1>
+<button class="btn btn-primary" type="button" ng-click="homeRoom.open()">Add New Room</button>
+<div class="master">
+     <div class="chat-room-numbers">
+          <ul ng-repeat="room in homeRoom.roomData.all">
+               <br>
+               <li>
+                   <a ui-sref="room" ng-click="homeRoom.changeRoom(room.$value, room.$id); homeRoom.changeMessages(room.$id)">{{ room.$value }}</a>
+               </li>
+          </ul>     
+     </div>
+          <div class="bodycol">
+              <p class="room-name">{{ homeRoom.roomName }}</p>
+              <p class="all-messages" ng-repeat="messages in homeRoom.roomMessages">{{ messages.username }}: {{ messages.content }} <br> Sent at {{ messages.sentAt}}</p>
+              <input name="message" ng-model="homeRoom.newRoomMessage" type="text" class="form-control" placeholder="Type in your message">
+              <button type="button" class="btn btn-primary" ng-click="homeRoom.addMessages()">Submit Message</button>
+          </div>
+</section>
+</div> 
+
